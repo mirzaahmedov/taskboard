@@ -1,8 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-  ${({ theme }) => theme.imports}
-
   *::before,
   *,
   *::after {
@@ -27,7 +25,8 @@ export default createGlobalStyle`
     font: inherit;
   }
   html,
-  body {
+  body,
+  #root {
     height: 100%;
   }
   body {
