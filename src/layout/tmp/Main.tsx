@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-import { FolderOpen, Notification } from "../assets/icons";
-import SearchInput from "../components/UI/Search/Input";
-import Avatar from "../components/UI/Avatar/Normal";
+import { FolderOpen, Notification } from "../../assets/icons";
+import SearchInput from "../../components/UI/Search/Input";
+import Avatar from "../../components/UI/Avatar/Normal";
 
 const Container = styled.div`
   flex: 1;

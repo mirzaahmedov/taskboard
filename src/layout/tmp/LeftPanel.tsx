@@ -19,8 +19,8 @@ import {
   Tune,
   Tag,
   AddCircle,
-} from "../assets/icons";
-import Avatar from "../components/UI/Avatar/Normal";
+} from "../../assets/icons";
+import Avatar from "../../components/UI/Avatar/Normal";
 
 const Container = styled.aside`
   min-height: 100%;
