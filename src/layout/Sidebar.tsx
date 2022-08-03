@@ -20,10 +20,11 @@ import {
   Tag,
   AddCircle,
 } from "../assets/icons";
+import Avatar from "../components/UI/Avatar/Normal";
 
 const Container = styled.aside`
   min-height: 100%;
-  max-width: 300px;
+  flex-basis: 300px;
   border: 1px solid ${({ theme }) => theme.colors.gray[60]};
 `;
 const Header = styled.div`
@@ -65,43 +66,6 @@ const Details = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4px;
-`;
-const Avatar = styled.div`
-  position: relative;
-  cursor: pointer;
-
-  :before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: -4px;
-    right: -4px;
-    top: -4px;
-    bottom: -4px;
-    border-radius: 50%;
-    border: 2px solid ${({ theme }) => theme.colors.gray[50]};
-  }
-  :before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: -4px;
-    right: -4px;
-    top: -4px;
-    bottom: -4px;
-    border-radius: 50%;
-    border: 2px solid ${({ theme }) => theme.colors.primary[500]};
-    border-left-color: transparent;
-    transform: rotate(45deg);
-  }
-`;
-const Image = styled.img`
-  display: block;
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
 `;
 const Name = styled.h3`
   font-size: 12px;
@@ -179,9 +143,11 @@ const Sidebar = () => {
       <Body>
         <Profile>
           <User>
-            <Avatar>
-              <Image src="/src/assets/img/profile.jpg" alt="profile picture" />
-            </Avatar>
+            <Avatar
+              frame
+              image="/src/assets/img/profile.jpg"
+              alt="Nancy Martino"
+            />
             <Details>
               <Name>Nancy Martino</Name>
               <Nickname>Designer</Nickname>
@@ -192,7 +158,7 @@ const Sidebar = () => {
           </MoreButton>
         </Profile>
         <section>
-          <details>
+          <details open>
             <Title>
               DASHBOARDS <ExpandLess />
             </Title>
@@ -293,7 +259,7 @@ const Sidebar = () => {
               </Link>
             </Nav>
           </details>
-          <details>
+          <details open>
             <Title>
               PROJECTS <ExpandLess />
             </Title>

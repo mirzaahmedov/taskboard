@@ -17,7 +17,7 @@ const Theme: DefaultTheme = {
       background: "#F7F8FA",
     },
     primary: {
-      100: "",
+      100: "#DBEAFE",
       500: "#3B82F6",
       600: "",
       opacity: {
@@ -31,17 +31,17 @@ const Theme: DefaultTheme = {
       50: "#EBEEF2",
       60: "#E9EBF0",
       100: "",
-      150: "",
+      150: "#C7CED9",
       200: "#B8BFCC",
       300: "#98A2B3",
-      400: "",
+      400: "#7A8699",
       500: "",
-      700: "",
+      700: "#323C4D",
       800: "#1F2633",
     },
     green: {
       100: "",
-      500: "",
+      500: "#22C55E",
       600: "",
       opacity: {
         10: "",
@@ -61,7 +61,7 @@ const Theme: DefaultTheme = {
     },
     red: {
       50: "",
-      500: "",
+      500: "#EF4444",
     },
     purple: {
       100: "",
@@ -81,7 +81,7 @@ const Theme: DefaultTheme = {
       600: "",
     },
     white: {
-      white: "",
+      white: "#ffffff",
     },
   },
 };

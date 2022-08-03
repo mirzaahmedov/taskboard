@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
-export default styled.button`
+const Button = styled.button`
   appearance: none;
 `;
+
+export default Button;
